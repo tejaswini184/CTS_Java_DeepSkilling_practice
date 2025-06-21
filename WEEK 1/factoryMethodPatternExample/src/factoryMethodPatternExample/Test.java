@@ -2,12 +2,12 @@ package factoryMethodPatternExample;
 
 public class Test {
 	public static void main(String[] args) {
-		DocumentFactory wordFactory=new WordDocumentFactory();
-		Document wordDoc=wordFactory.createDocument();
-		wordDoc.open();
-		wordDoc.save();
+	    DocumentFactory wordFactory=new WordDocumentFactory();
+	    Document wordDoc=wordFactory.createDocument();
+	    wordDoc.open();
+	    wordDoc.save();
 		
-		DocumentFactory pdfFactory = new PdfDocumentFactory();
+	    DocumentFactory pdfFactory = new PdfDocumentFactory();
 	    Document pdfDoc = pdfFactory.createDocument();
 	    pdfDoc.open();
 	    pdfDoc.save();
